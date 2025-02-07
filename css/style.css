@@ -109,6 +109,50 @@ a {
 /* 基本設定 */
 /* ------------------------------ */
 
+.conPC_image{
+  position: relative;
+}
+
+.loop{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.loop {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loop_text {
+  width: 100%!important;
+}
+
+.loop_text:nth-child(odd) {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop_text:nth-child(even) {
+  animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+}
 
 /* ------------------------------ */
 /* リンクをちょうどいい位置に飛ばす */
@@ -134,6 +178,7 @@ a.anchor {
 }
  /* ロード時にページ全体をフェードイン */
 /* ------------------------------ */
+
 
 
 /* ------------------------------ */
@@ -530,8 +575,8 @@ div[class^="conE__photo"]::after {
   .phone {
     position: absolute;
     max-width:600px;
-    top: 5rem;
-    left: 10rem;
+    top: 5%;
+    left: 40%;
   }
   .conA {
     border-radius: 20px 20px 0 0 ;
@@ -587,8 +632,8 @@ div[class^="conE__photo"]::after {
 
   .phone {
     position: absolute;
-    top: 5rem;
-    left: 10rem;
+    top: 5%;
+    left: 50%;
   }
 
   .conA {
