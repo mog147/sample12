@@ -2,158 +2,165 @@
 /* 基本設定 */
 
 /* 基本色 */
-:root {
-  --main-color : #596a1a;
-  --accent-color : #d4cab3;
-  --sub-color : #a68d75;
-  --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
-  --text-bright-color : #d4cab3; 
-  --base-color:#f8f5f0;
-  --icon-color : #a68d75;
-  --icon-bk-color : #fff;
-  --large-width:1000px;
-  --middle-width:800px;
-  --small-width:600px;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, 
-  ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-  Helvetica, "游ゴシック Medium", meiryo, sans-serif;
-  font-size: 16px;
-  background-color: var(--base-color);
-}
-
-h2 {
-  color: var(--text-bright-color);
-  letter-spacing: 0.5rem;
-  font-weight: normal;
-  color: var(--sub-color);
-}
-
-p {
-  color: var(--text-bright-color);
-  letter-spacing: 0.2rem;
-  line-height: 2.5;
-  color: var(--sub-color);
-}
-
-li {
-    list-style: none;
-    margin-right: 1rem;
-    margin: 1rem;
-}
-
-a {
-  color: var(--dark-main-color);
-  text-decoration: none;
-  text-align: center
-}
-
-.phone {
-  max-width: 100%;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.container {
-  padding: 0 3rem; 
-  margin-bottom: 3rem;
-}
-
-
-.text {
-  text-align: center;
-  overflow-wrap: anywhere;
-  padding: 3rem 0;
-}
-
- .title{
-  font-weight:normal;
-  letter-spacing: 0.3rem;
-  text-align: center;
-}
-
-/* 基本設定 */
-/* ------------------------------ */
-
-.conPC_image{
-  position: relative;
-}
-
-.loop{
-  position: absolute;
-  top: 50%;
-  left: 0%;
-}
-.loop {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.loop_text {
-  width: 100%!important;
-}
-
-.loop_text:nth-child(odd) {
-  animation: loop 50s -25s linear infinite;
-}
-
-.loop_text:nth-child(even) {
-  animation: loop2 50s linear infinite;
-}
-
-@keyframes loop {
-    0% {
-      transform: translateX(100%);
+    :root {
+      --main-color : #596a1a;
+      --accent-color : #d4cab3;
+      --sub-color : #a68d75;
+      --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
+      --text-bright-color : #d4cab3; 
+      --base-color:#f8f5f0;/*rgba(248, 245, 240, 0)*/
+      --icon-color : #a68d75;
+      --icon-bk-color : #fff;
+      --large-width:1000px;
+      --middle-width:800px;
+      --small-width:600px;
     }
-    to {
-      transform: translateX(-100%);
-    }
-}
 
-@keyframes loop2 {
-    0% {
-      transform: translateX(0);
+    html {
+      height: 100%;
     }
-    to {
-      transform: translateX(-200%);
-    }
-}
 
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, 
+      ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+      Helvetica, "游ゴシック Medium", meiryo, sans-serif;
+      font-size: 16px;
+      background-color: var(--base-color);
+    }
+
+    h2 {
+      font-size: 18px;
+      color: var(--text-bright-color);
+      letter-spacing: 0.5rem;
+      font-weight: normal;
+      color: var(--sub-color);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--text-bright-color);
+      letter-spacing: 0.2rem;
+      line-height: 2.5;
+      color: var(--sub-color);
+    }
+
+    li {
+        list-style: none;
+        margin-right: 1rem;
+        margin: 1rem;
+    }
+
+    a {
+      color: var(--dark-main-color);
+      text-decoration: none;
+      text-align: center
+    }
+
+    .phone {
+      max-width: 100%;
+    }
+
+    section{
+      margin-bottom: 7rem;
+    }
+
+    .container {
+      padding: 0 3rem; 
+      margin-bottom: 3rem;
+    }
+
+    .text {
+      text-align: center;
+      overflow-wrap: anywhere;
+      padding: 3rem 0;
+    }
+
+    .title{
+      font-size: 18px;
+      letter-spacing: 0.3rem;
+      text-align: center;
+    }
+
+    .accent{
+      font-size: 80px;
+      color: var(--main-color);
+      letter-spacing: 0.75rem;
+    }
+
+    .accent2{
+      font-size: 40px;
+      color: var(--sub-color);
+    }
+
+    /* 基本設定 */
+    /* ------------------------------ */
+
+    .conPC_image{
+      position: relative;
+    }
+
+    .loop__wrap {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      width: 100vw;
+      overflow: hidden;
+    }
+    
+    .loop__wrap img {
+      width: auto;
+      height: 100%;
+      padding: 0 3rem;
+    }
+
+    @keyframes loop {
+      0% {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+    
+    @keyframes loop2 {
+      0% {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-200%);
+      }
+    }
+
+    .loop__wrap img:first-child {
+      animation: loop 50s -25s linear infinite;
+    }
+    
+    .loop__wrap img:last-child {
+      animation: loop2 50s linear infinite;
+    }
 /* ------------------------------ */
 /* リンクをちょうどいい位置に飛ばす */
-a.anchor {
-  display: block;
-  padding-top: 70px;
-  margin-top: -70px;
-}
+    a.anchor {
+      display: block;
+      padding-top: 70px;
+      margin-top: -70px;
+    }
 /* リンクをちょうどいい位置に飛ばす */
 /* ------------------------------ */
 
 /* ------------------------------ */
  /* ロード時にページ全体をフェードイン */
- body {
-  animation: fade 3s;
-}
+    body {
+      animation: fade 3s;
+    }
 
-@keyframes fade {
-  0% {opacity: 0;
-  }
-  100% {opacity: 1;
-  }
-}
+    @keyframes fade {
+      0% {opacity: 0;
+      }
+      100% {opacity: 1;
+      }
+    }
  /* ロード時にページ全体をフェードイン */
 /* ------------------------------ */
 
@@ -162,100 +169,116 @@ a.anchor {
 /* ------------------------------ */
 /*-----header-----*/
 
-.fixed {
-  position: fixed;
-}
+    .fixed {
+      position: fixed;
+    }
 
-.dli-menu {
-  vertical-align: middle;
-  color: var(--main-color);
-  line-height: 1;
-  width: 1em;
-}
+    .header {
+      position: relative;
+      top: 5rem;
 
-.dli-menu > span {
-  display: block;
-  height: 0.1em;
-  background: currentColor;
-  border-radius: 0.1em;
-}
+      z-index: 100;
+      width: 600px;
+      height: 5rem;
+    } 
 
-.dli-menu > span + span {
-  margin-top: 0.22em;
-}
+    .header__menu {
+      position: absolute;
+      padding-top: 1rem;
+      padding-right: 1rem;
 
-.header {
-  position: relative;
-  top: 5rem;
-
-  z-index: 100;
-  width: 600px;
-  height: 5rem;
-} 
-  
+      z-index: 300;
+      width: 100vw;
+      max-width: 600px;   
+    }
 
 
-.header__menu {
-  position: absolute;
-  padding-top: 1rem;
-  padding-right: 1rem;
+    .header__menu-button {
+      display: block;
+      font-size: 1.5rem;
 
-  z-index: 300;
-  width: 100vw;
-  max-width: 600px;   
-}
+      background: none;
+      border: none;
 
+      margin-left: auto;
+      margin-right: 0;
+      padding: 2rem;
+    }
 
-.header__menu-button {
-  display: block;
-  font-size: 1.5rem;
+    .header__menu-bar {
+        display: none;
+        position: absolute;
+        z-index: 200;
+        
+        height:100vh;
+        min-height: 450px;
 
-  background: none;
-  border: none;
-
-  margin-left: auto;
-  margin-right: 0;
-  padding: 2rem;
-}
-
-.header__menu-bar {
-    display: none;
-    position: absolute;
-    z-index: 200;
-    
-    height:110vh;
-    min-height: 700px;
-
-    width: 100vw;   
-    max-width: 600px;     
-}
+        width: 100vw;   
+        max-width: 600px;     
+    }
 
 
-.header__menu-list{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+    .header__menu-list{
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
 
-  height: 100vh;
-  min-height: 1000px;
+      height: 135vh;
+      min-height: 450px;
 
-  width: 100%;
+      width: 100%;
 
-  margin-top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  background-color: var(--accent-color);
-  
+      margin-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+      background-color: var(--main-color);
+      
+    }
 
-}
+    .header__menu-image{
+      width: 50%;
+      position: absolute;
+      top: 95%;
+      left: 55%;
+    }
 
-.header__menu-item a {
-    display: block;
-    font-size: 1.5rem;
-    padding: 30px;
-    color: var(--text-bright-color);
-    letter-spacing: 0.3rem;
-}
+    .header__menu-image2{
+      width: 35%;
+      position: absolute;
+      top: 10%;
+      left: -5%;
+    }
+
+    .header__menu-item a {
+        display: block;
+        font-size: 1.5rem;
+        padding: 30px;
+        color: var(--accent-color);
+        letter-spacing: 0.3rem;
+
+        font-family: "ta-dansyaku", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .dli-menu {
+      vertical-align: middle;
+      color: var(--icon-bk-color);
+      line-height: 1;
+      width: 1em;
+    }
+
+    .dli-menu > span {
+      display: block;
+      height: 0.1em;
+      background: currentColor;
+      border-radius: 0.1em;
+    }
+
+    .dli-menu > span + span {
+      margin-top: 0.22em;
+    }
+
 
   
 /*-----header-----*/
@@ -274,6 +297,7 @@ a.anchor {
       background-size: 100%;
       background-repeat: no-repeat;
       padding-bottom: 5rem;
+      margin: 0;
     }
 
     .conA_box{
@@ -293,7 +317,6 @@ a.anchor {
 /* ------------------------------ */
 /* conB introduce**/
 
-
     .conB{
       padding-top: 200%;
     }
@@ -307,139 +330,82 @@ a.anchor {
 
 
 /* ------------------------------ */
-/* conC col_1*/
+/* conC*/
 
     .conC_image{
       width: 50%;
       padding-left: 25%;
     }
 
-
-
-/* conC col_1*/
+/* conC/
 /* ------------------------------ */
 
 /* ------------------------------ */
-/* conD 背景画像*/
+/* conD */
 
-.conD__photo1 { 
-  background-image: url(../img/dummy.jpg);
-}
-
-.conD__photo2 { 
-  background-image: url(../img/dummy2.jpg);
-}
-
-.conD__photo3 { 
-  background-image: url(../img/dummy.jpg);
-}
-
- /** クラス指定の先頭の文字列が[conD__photo]だったら*/
-[class^="conD__photo"]{
-  width: 100%;
-  min-height: 300px;
-  background-position: center;
-  background-size:contain;
-  background-repeat: no-repeat;
-}
-
-
-
-/* conD 背景画像*/
-/* ------------------------------ */
-/* ------------------------------ */
-/* btn */
-    
-    .more_btn {
-      position: relative;
-
-      /* 上下中央 */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      letter-spacing: 0.2rem;
-      color: var(--accent-color);
+    .conD__box{
       margin-bottom: 3rem;
-      }
+    }
 
-/* btn */
+    .conD_image{
+      width: 100%;
+    }
+
+    #CART h2{
+      letter-spacing: 0.3rem;
+    }
+
+
+/* conD */
 /* ------------------------------ */
 
 /* ------------------------------ */
-/* conE 横幅いっぱい画像 + text */
+/* conE */
 
-div[class^="conE__photo"] {
-  position: relative;
-  min-height: 300px;
-  background-position: center;
-  background-size: cover;
-  margin: 3rem 0;
-}
+    .conE_image{
+      width: 100%;
+    }
 
-/* textを見やすくするために少し暗い色を画像に載せる */
-div[class^="conE__photo"]::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(25,25,25,0.5);
-}
+    .conE_image2{
+      padding-left: 25%;
+      width: 50%;
+    }
 
-.conE__photoA {
-  background-image: url(../img/dummy.jpg);
-}
-
-.conE__photoB {
-  background-image: url(../img/dummy2.jpg);
-}
-
-.conE__photoC {
-  background-image: url(../img/dummy.jpg);
-}
-
-.conE__link {
-  z-index: 1;
-  /* 画像の中心に文字 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-  font-size: 2rem;
-  opacity: 1;
-  color: var(--text-bright-color);
-  letter-spacing: 0.5rem;
-  line-height: 1.5;
-}
+/* conE */
+/* ------------------------------ */
 
 /* ------------------------------ */
 /* footer */
- 
-.footer {
-  bottom: 0;
-  max-width: 100%;	
-  vertical-align: bottom;
-  background-color: var(--sub-color);
-  color: var(--text-bright-color);
-}
+
+    .wrapper{
+      height: 100%;
+      min-height: 100vh;
+      position: relative;/*←相対位置*/
+      padding-bottom: 200px;/*←footerの高さ*/
+      box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+    }
+
+    .footer{
+      width: 100%;
+      position: absolute;/*←絶対位置*/
+      bottom: 0; /*下に固定*/
+      background-color: var(--sub-color);
+    }
+    
+    .footer p{
+      padding: 3rem 0;
+      color: var(--text-bright-color);
+      text-align: center;
+    }
+
 
 /* footer */
+/* ------------------------------ */
 
 
  /* ------------------------ */
 /* phoneのときの制御 */
   @media (max-width:599px) {
-
-  h2 {
-    font-size: 18px;
-  }
-
-  p {
-      font-size: 14px;
-  }
 
   .conPC {
       display: none;
@@ -450,7 +416,6 @@ div[class^="conE__photo"]::after {
     top:0;
     left: 0;
   }
-
 
   .header__menu {
     position:absolute;
@@ -512,10 +477,16 @@ div[class^="conE__photo"]::after {
     max-width:600px;
     top: 5%;
     left: 40%;
+    background-color: rgba(248, 245, 240, 0.9)
   }
   .conA {
     border-radius: 20px 20px 0 0 ;
     max-width:600px;
+    padding-bottom: 0;
+  }
+
+  .conB{
+    padding-top: 0;
   }
 
 }
@@ -536,10 +507,6 @@ div[class^="conE__photo"]::after {
 
   .header__menu-list{
     border-radius: 20px 20px 0 0 ;
-    max-width:600px;
-  }
-
-  .phone {
     max-width:600px;
   }
 
@@ -566,6 +533,8 @@ div[class^="conE__photo"]::after {
   }
 
   .phone {
+    max-width:600px;
+    background-color: rgba(248, 245, 240, 0.8);
     position: absolute;
     top: 5%;
     left: 50%;
@@ -574,21 +543,17 @@ div[class^="conE__photo"]::after {
   .conA {
     border-radius: 20px 20px 0 0 ;
     max-width:600px;
-    min-height: 1000px;
-    
+    height: 122vh;
+    margin-bottom: 5rem;
   } 
+
+  .conB{
+    padding-top: 0;
+  }
 
 }
 /* PCのときの制御 */
 /* ------------------------ */
 
-/* ------------------------ */
-/* ダークモードの対応 */
-.div {
-  color: light-dark(#333, #fff);
-  background-color: light-dark(#fff, #333);
-}
-/* ダークモードの対応 */
-/* ------------------------ */
 
 

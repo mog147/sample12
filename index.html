@@ -20,16 +20,14 @@
     <!-- adobe fonts -->
     <script>
         (function(d) {
-        var config = {
-            kitId: 'etw6rwx',
+          var config = {
+            kitId: 'bju5ppq',
             scriptTimeout: 3000,
             async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-    </script>
-    <script src="//vip.chps-api.fc2.com/apis/footer/?charset=UTF-8&amp;url=https%3A%2F%2Fmomoko0402.web.fc2.com%2Flp.html&amp;service=0&amp;r=17195826479" charset="UTF-8" async=""></script>
-    <style>.tk-vdl-gigamaru{font-family:"vdl-gigamaru",sans-serif;}</style>
+      </script>
 
      <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -43,14 +41,9 @@
             
             <img src="img/top_pc.png">
 
-            <div class="loop">
-                <img class="loop_text" src="img/Calm Matcha Blend.png">
-                <p>&ensp;</p>
-                <img class="loop_text" src="img/Calm Matcha Blend.png">
-                <p>&ensp;</p>
-                <img class="loop_text" src="img/Calm Matcha Blend.png">
-                <p>&ensp;</p>
-                <img class="loop_text" src="img/Calm Matcha Blend.png">
+            <div class="loop__wrap">
+                <img src="img/Calm Matcha Blend.png">
+                <img src="img/Calm Matcha Blend.png">
             </div>
 
         </div>
@@ -58,30 +51,33 @@
     </div>
 
     <div class="phone">
+    
+        <div class="wrapper">
 
-        <header>
-            <div class="head-fixed header">
-                
-                    <div class="header__menu">
-                        <span class="header__menu-button dli-menu">
-                            <span></span><span></span><span></span>
-                          </span>
-                    </div>
+            <header>
+                <div class="head-fixed header">
+                    
+                        <div class="header__menu">
+                            <span class="header__menu-button dli-menu">
+                                <span></span><span></span><span></span>
+                            </span>
+                        </div>
 
-                    <nav class="header__menu-bar">
+                        <nav class="header__menu-bar">
 
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item"><a href="#POINT">特徴</a></li>
-                            <li class="header__menu-item"><a href="#CONTENTS">content</a></li>
-                            <li class="header__menu-item"><a href="#CONTENTS2">content2</a></li>
-                        </ul>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item"><a href="#POINT">特徴</a></li>
+                                <li class="header__menu-item"><a href="#CUSTOMER">お客様の声</a></li>
+                                <li class="header__menu-item"><a href="#CART">お申し込み</a></li>
+                            </ul>
 
-                    </nav>
+                            <img class="header__menu-image" src="img/tea.png">
+                            <img class="header__menu-image2" src="img/girl.png">
 
-            </div>
-        </header>
+                        </nav>
 
-        <div id="target">
+                </div>
+            </header>
 
             <section class="conA">
 
@@ -91,96 +87,123 @@
 
             </section>
 
-            <section class="conB">    
+            <div id="target">
 
-                <div class="container">
+                <section class="conB">    
 
-                    <div class="text">
-
-                        <p>静かな夜、カップに広がる
-                            <br>お茶の香りと共に深呼吸...
-                            <br>今日の疲れがほどけていく。
-                        </p>
-
-                    </div> 
-
-                    <img class="conB_image" src="img/relax.png">
-
-            </section>
-
-            <a id="POINT" class="anchor">
-                <h2 class="title">オーガニック100%
-                 <br>心落ち着かせる特別な一杯
-                </h2>
-            </a>
-
-            <section class="conC">
-                <div class="container">
-
-                    <div class="conC__box">
-
-                        <h2 class="title">特徴①</h2>
-
-                        <p class="text">カフェイン控えめ</p>
-
-                        <img class="conC_image" src="img/leaf.png">
+                    <div class="container">
 
                         <div class="text">
-                            <p>穏やかな時間のおともに。
-                               <br>就寝前やリラックスしたいときに
-                               <br>おすすめ。</p>
+
+                            <p>静かな夜、カップに広がる
+                                <br>お茶の香りと共に深呼吸...
+                                <br>今日の疲れがほどけていく。
+                            </p>
+
+                        </div> 
+
+                        <img class="conB_image" src="img/relax.png">
+
+                </section>
+
+                <a id="POINT" class="anchor">
+                    <h2 class="title">オーガニック100%
+                    <br>心落ち着かせる特別な一杯
+                    </h2>
+                </a>
+
+                <section class="conC">
+                    <div class="container">
+
+                        <div class="conC__box">
+
+                            <h2 class="title accent2">特徴①</h2>
+
+                            <p class="text">カフェイン控えめ</p>
+
+                            <img class="conC_image" src="img/leaf.png">
+
+                            <div class="text">
+                                <p>穏やかな時間のおともに。
+                                <br>就寝前やリラックスしたいときに
+                                <br>おすすめ。</p>
+                            </div>
+
+                        </div>
+
+                        <div class="conC__box">
+
+                            <h2 class="title accent2">特徴②</h2>
+
+                            <p class="text">自宅で簡単に作れる</p>
+
+                            <img class="conC_image" src="img/teapack.png">
+
+                            <div class="text">
+                                <p>お湯を注ぐだけで手軽に楽しめる
+                                    <br>ティーパック式で、
+                                    <br>オーガニックの優しさを毎日の習慣に。</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <a id="CUSTOMER" class="anchor">
+                    <h2 class="title accent2">お客様の声</h2>
+                </a>
+
+                <section class="conD">
+                    <div class="container">
+
+                        <div class="conD__box">
+
+                            <img class="conD_image" src="img/a.png">
+
+                        </div>
+
+                        <div class="conD__box">
+
+                            <img class="conD_image" src="img/b.png">
+
+                        </div>
+
+                        <div class="conD__box">
+
+                            <img class="conD_image" src="img/c.png">
+
                         </div>
 
                     </div>
 
-                    <div class="conC__box">
+                </section>
 
-                        <h2 class="title">特徴②</h2>
+                <a id="CART" class="anchor">
+                    <h2 class="title">
+                        本ページをご覧の方
+                    <br><span class="accent">限定!</span>
+                    </h2>
+                </a>
 
-                        <p class="text">自宅で簡単に作れる</p>
+                <section class="conE">
+                        
+                    <a class="conE_box" href="#">
 
-                        <img class="conC_image" src="img/teapack.png">
+                        <img class="conE_image" src="img/bottom.png">                
+                        <img class="conE_image2" src="img/btn.png">
+                    </a>
 
-                        <div class="text">
-                            <p>お湯を注ぐだけで手軽に楽しめる
-                                <br>ティーパック式で、
-                                <br>オーガニックの優しさを毎日の習慣に。</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <a id="CUSTOMER" class="anchor">
-                <h2 class="title">お客様の声</h2>
-            </a>
-
-            <section class="conD">
-                <div class="container">
+                </section>
 
 
-                    </div>
+                <footer class="footer">
 
-                </div>
+                    <p>©COPY RIGHT</p>
 
-            </section>
+                </footer>
 
-
-
-            <div class="footer">
-                <div class="container">
-
-                    <div class="info">
-
-                        <div class="text"><p>©COPY RIGHT</p></div>
-
-                    </div>
-
-                </div>
             </div>
-
-
 
         </div>
 
