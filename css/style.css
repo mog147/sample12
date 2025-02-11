@@ -3,12 +3,13 @@
 
 /* 基本色 */
 :root {
-  --main-color : #e95792;
-  --accent-color : #67c09f;
-  --sub-color : #79abdc;
+  --main-color : #596a1a;
+  --accent-color : #d4cab3;
+  --sub-color : #a68d75;
   --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
-  --text-bright-color : #fff; /*rgba(255, 255, 255, 0)*/
-  --icon-color : #e95792;
+  --text-bright-color : #d4cab3; 
+  --base-color:#f8f5f0;
+  --icon-color : #a68d75;
   --icon-bk-color : #fff;
   --large-width:1000px;
   --middle-width:800px;
@@ -25,20 +26,21 @@ body {
   ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
   Helvetica, "游ゴシック Medium", meiryo, sans-serif;
   font-size: 16px;
-  background-color: var(--dark-main-color);
+  background-color: var(--base-color);
 }
 
 h2 {
   color: var(--text-bright-color);
   letter-spacing: 0.5rem;
   font-weight: normal;
-
+  color: var(--sub-color);
 }
 
 p {
   color: var(--text-bright-color);
   letter-spacing: 0.2rem;
   line-height: 2.5;
+  color: var(--sub-color);
 }
 
 li {
@@ -65,45 +67,21 @@ a {
 }
 
 .container {
-  padding: 3rem; 
+  padding: 0 3rem; 
+  margin-bottom: 3rem;
 }
 
 
 .text {
   text-align: center;
-  flex: 1;
-  padding-left:3rem;
-  padding-right: 3rem;
-
   overflow-wrap: anywhere;
-  margin-bottom: 5rem;
+  padding: 3rem 0;
 }
 
-
-
-.scrollbox {
-  width: 100%;
-  background-color: var(--dark-main-color);
-}
-
- /** クラス指定の先頭の文字列がtitleだったらという指定*/
- a[class^="title"] {
+ .title{
   font-weight:normal;
   letter-spacing: 0.3rem;
-  font-size: 1.5rem;
-
-  /* adobe fonts */
-  font-family: "vdl-gigamaru", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.titleA {
-  color: var(--main-color);
-}
-
-.titleB {
-  color: var(--accent-color);
+  text-align: center;
 }
 
 /* 基本設定 */
@@ -188,6 +166,24 @@ a.anchor {
   position: fixed;
 }
 
+.dli-menu {
+  vertical-align: middle;
+  color: var(--main-color);
+  line-height: 1;
+  width: 1em;
+}
+
+.dli-menu > span {
+  display: block;
+  height: 0.1em;
+  background: currentColor;
+  border-radius: 0.1em;
+}
+
+.dli-menu > span + span {
+  margin-top: 0.22em;
+}
+
 .header {
   position: relative;
   top: 5rem;
@@ -212,7 +208,7 @@ a.anchor {
 
 .header__menu-button {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
 
   background: none;
   border: none;
@@ -269,25 +265,26 @@ a.anchor {
  /* hero-top */
 
     .conA {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       height:100vh;
       min-height: 450px;
       width: 100vw;
 
-      background-image:url(../img/dummy2.jpg);
-      background-position: center center;
-      background-size: cover;
+      background-image:url(../img/top.png);
+      background-position: center top;
+      background-size: 100%;
       background-repeat: no-repeat;
+      padding-bottom: 5rem;
+    }
 
-      text-align: center;
-    
-      padding-bottom: 3rem;
-    
-      color: var(--text-bright-color);
-      
+    .conA_box{
+      position: absolute;
+      left: 0%;
+      width: 100%;
+      padding-top: 170%;
+    }
+
+    .conA_image{
+      width: 50%;
     }
 
 /* hero-top */
@@ -297,34 +294,13 @@ a.anchor {
 /* conB introduce**/
 
 
-    .conB .en_name {
-      margin-top: -1.5rem;
-      margin-right: 0.5rem;
-    }
-    
-    .sns__list{
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    
-    .sns__item a {
-      /* aタグにmarginは効かないから一度ブロックにする必要あり  */
-      text-decoration: none;
-      font-size: 42px;
-      color: var(--accent-color);
+    .conB{
+      padding-top: 200%;
     }
 
-    .sns__item:last-child a {
-      margin-right: 0;
+    .conB_image{
+      width: 100%;
     }
-    
-    .sns__item a:hover{
-        background-color:rgba(51,51,51,0.1) ;
-    }
-    
 
 /* conB introduce*/
 /* ------------------------------ */
@@ -332,6 +308,13 @@ a.anchor {
 
 /* ------------------------------ */
 /* conC col_1*/
+
+    .conC_image{
+      width: 50%;
+      padding-left: 25%;
+    }
+
+
 
 /* conC col_1*/
 /* ------------------------------ */
@@ -439,57 +422,12 @@ div[class^="conE__photo"]::after {
   bottom: 0;
   max-width: 100%;	
   vertical-align: bottom;
+  background-color: var(--sub-color);
+  color: var(--text-bright-color);
 }
 
 /* footer */
-/* ------------------------------ */
-/* pege topにとぶ */
 
-#page_top{
-    width: 90px;
-    height: 90px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    opacity: 0.6;
-
-  }
-  #page_top a{
-    position: relative;
-    display: block;
-    width: 90px;
-    height: 90px;
-  }
-
-  #page_top a::before{
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f102';
-    font-size: 25px;;
-    color: var(--accent-color);
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: -40px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-  }
-  #page_top a::after{
-    content: 'PAGE TOP';
-    font-size: 13px;
-    position: absolute;
-    top: 45px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    color: var(--accent-color);
-  }  
-
-  /* pege topにとぶ */
-/* ------------------------------ */
 
  /* ------------------------ */
 /* phoneのときの制御 */
@@ -513,9 +451,6 @@ div[class^="conE__photo"]::after {
     left: 0;
   }
 
-  .scrollbox {
-    padding-top: 45rem;
-  }
 
   .header__menu {
     position:absolute;
