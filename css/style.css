@@ -508,6 +508,7 @@
   .header__menu-list{
     border-radius: 20px 20px 0 0 ;
     max-width:600px;
+    height: 177vh;
   }
 
   .conPC {
