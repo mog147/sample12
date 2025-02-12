@@ -511,6 +511,10 @@
     height: 177vh;
   }
 
+  .header__menu-image{
+    top: 113%;
+  }
+
   .conPC {
     position: fixed;
     z-index: -1;
