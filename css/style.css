@@ -544,7 +544,7 @@
 
   .phone {
     max-width:600px;
-    background-color: rgba(248, 245, 240, 0.8);
+    background-color: rgba(248, 245, 240, 0.95);
     position: absolute;
     top: 5%;
     left: 50%;
