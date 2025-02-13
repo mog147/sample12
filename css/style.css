@@ -355,6 +355,10 @@
       letter-spacing: 0.3rem;
     }
 
+    #CART .accent{
+      letter-spacing: 1.05rem;
+    }
+
 
 /* conD */
 /* ------------------------------ */
@@ -367,6 +371,7 @@
     }
 
     .conE_image2{
+      margin-top: 2rem;
       padding-left: 25%;
       width: 50%;
     }
