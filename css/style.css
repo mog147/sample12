@@ -85,7 +85,7 @@
     .accent{
       font-size: 60px;
       color: var(--main-color);
-      letter-spacing: 0.75rem;
+      letter-spacing: 1.05rem;
     }
 
     .accent2{
@@ -353,10 +353,6 @@
 
     #CART h2{
       letter-spacing: 0.3rem;
-    }
-
-    #CART .accent{
-      letter-spacing: 1.05rem;
     }
 
 
