@@ -27,6 +27,7 @@
       Helvetica, "游ゴシック Medium", meiryo, sans-serif;
       font-size: 16px;
       background-color: var(--base-color);
+      overflow-x: hidden;
     }
 
     h2 {
@@ -384,6 +385,7 @@
       position: relative;/*←相対位置*/
       padding-bottom: 200px;/*←footerの高さ*/
       box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+      overflow: hidden;
     }
 
     .footer{
