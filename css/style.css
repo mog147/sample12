@@ -9,7 +9,7 @@
       --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
       --text-bright-color : #d4cab3; 
       --base-color:#fff;/*rgba(248, 245, 240, 0)*/
-      --icon-color : #a68d75;
+      --icon-color : #d98324;
       --icon-bk-color : #fff;
       --large-width:1000px;
       --middle-width:800px;
@@ -84,8 +84,7 @@
     }
 
     .accent{
-      font-size: 60px;
-      color: var(--main-color);
+      color: var(--icon-color);
       letter-spacing: 1.05rem;
     }
 
